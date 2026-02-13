@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chiranjeevi | Defence Tech Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0f14;
+            color: white;
+        }
+
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00ff99;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: #0f1720;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00ff99;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card {
+            background: #111827;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00ff99;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #00ff99;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 id="name">Chiranjeevi T</h1>
+    <p>Aspiring Defence Technologist</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p id="aboutText">I am passionate about Defence Technology, AI systems, and national security innovation.</p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+        <p>• Add your projects here</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <p>Python | Electronics | AI | Problem Solving</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: chiruct11@gmail.com</p>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>Update About Section</h2>
+        <input type="text" id="newAbout" placeholder="Write new about text" style="width:70%; padding:10px;">
+        <br><br>
+        <button onclick="updateAbout()">Update</button>
+    </div>
+</section>
+
+<script>
+function updateAbout() {
+    var newText = document.getElementById("newAbout").value;
+    document.getElementById("aboutText").innerText = newText;
+}
+</script>
+
+</body>
+</html
