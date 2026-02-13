@@ -113,10 +113,21 @@
 </section>
 
 <script>
+
+// Load saved text when page opens
+window.onload = function() {
+    var savedText = localStorage.getItem("aboutData");
+    if (savedText) {
+        document.getElementById("aboutText").innerText = savedText;
+    }
+};
+
 function updateAbout() {
     var newText = document.getElementById("newAbout").value;
     document.getElementById("aboutText").innerText = newText;
+    localStorage.setItem("aboutData", newText);
 }
+
 </script>
 
 </body>
